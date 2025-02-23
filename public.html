@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTW Promotion Guidlines</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-logo {
+            height: 40px;
+            margin: 0 auto;
+        }
+
+        .menu-button {
+            font-size: 16px;
+            color: #fff;
+            background: #ff0055;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: absolute;
+            right: 20px;
+        }
+
+        .menu-button:hover {
+            background: #ff6600;
+        }
+
+        .menu-button.active {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px 5px darkgoldenrod;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background: #222;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .menu a:hover {
+            background: #333;
+            border-radius: 5px;
+        }
+
+        .menu a img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 50px auto;
+            padding: 25px;
+            background: #111;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #00ffcc;
+        }
+
+        h2 {
+            color: #00ffcc;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .term {
+            margin: 20px 0;
+            padding: 20px;
+            background: #222;
+            border: 2px solid #00ffcc;
+            border-radius: 8px;
+            font-size: 16px;
+            position: relative;
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+        }
+
+        .term-number {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .term:hover {
+            box-shadow: 0 0 15px #00ffcc;
+        }
+
+        .term.active {
+            transform: scale(1.2);
+            box-shadow: 0 0 30px #ffcc00;
+            background: gold;
+            color: black;
+        }
+
+        .contact-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: #ff0055;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+            animation: pulse 1.5s infinite;
+            text-transform: uppercase;
+        }
+
+        .contact-button:hover {
+            transform: scale(1.1);
+            background: #ff6600;
+        }
+
+        .contact-button img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="https://growwsociallps.github.io/rtwmediaagency.com/images/brandlogo2.png" alt="Logo" class="header-logo">
+        <button class="menu-button" id="menuButton">Menu</button>
+        <div class="menu" id="dropdownMenu">
+            <a href="https://rtwmediaagency.com"><img src="https://i.ibb.co/gLsBZ1Rz/5974636.png" alt="Home Icon">Home</a>
+            <a href="https://chat.whatsapp.com/Co1DEKlMcCt0Z0SHGn0T0P"><img src=https://i.ibb.co/YFM9hwYj/733585.png" alt="Home Icon">Join Group</a>
+            <a href="https://rtwmediaagency.com/#apihu-port-resume"><img src="https://i.ibb.co/vvMxNr3Q/18792963.png" alt="About Icon">About</a>
+            <a href="https://rtwmediaagency.com/#apihu-port-feature"><img src="https://i.ibb.co/DfftdF4Q/customer-service-1.png" alt="Services Icon">Services</a>
+            <a href="https://whatsapp.com/channel/0029VamzcGuDjiOjn0MsZf3h"><img src="https://i.ibb.co/Rxj9tkm/10384161.png" alt="Payment Proofs Icon">Payment Proof</a>
+            <a href="https://rtwmediaagency.com/#contact-details"><img src="https://i.ibb.co/fd3pTPNJ/14946653.png" alt="Contact Icon">Contact</a>
+            <a href="https://developer9444.github.io/rules-for-promotion/"><img src="https://i.ibb.co/0VGjK5Cy/3251383.png" alt=" Rules Of Promotion Icon">Rules For Promotion</a>
+        </div>
+    </div>
+    
+ 
+    
+    <title>Copy & Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .container {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+            transition: 0.3s;
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+        }
+        .copy-label {
+            font-size: 12px;
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+        .copy-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 10px 0;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .copy-text {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .copy-btn, .download-btn {
+            background: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(255, 87, 34, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .copy-box.active {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(255, 87, 34, 0.7);
+        }
+        .copy-message {
+            font-size: 12px;
+            color: #4caf50;
+            margin-top: 5px;
+            display: none;
+            transition: opacity 0.5s;
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .download-btn:hover, .copy-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(255, 87, 34, 0.7);
+        }
+    
+    
+    </style>
+</head>
+<body onclick="removeActive()">
+    <div class="container">
+        <h2>Copy & Download Section</h2>
+        <div class="copy-label">BIO HASHTAG</div>
+        <div class="copy-box" onclick="copyText('text1', this)">
+            <span class="copy-text" id="text1">#rtwmediaagency</span>
+            <button class="copy-btn">COPY</button>
+        </div>
+        <div class="copy-label">MANAGED BY</div>
+        <div class="copy-box" onclick="copyText('text2', this)">
+            <span class="copy-text" id="text2">your media name</span>
+            <button class="copy-btn">COPY</button>
+        </div>
+        <div class="copy-label">BIO LINK</div>
+        <div class="copy-box" onclick="copyText('text3', this)">
+            <span class="copy-text" id="text3">www.mglion.com</span>
+            <button class="copy-btn">COPY</button>
+        </div>
+        
+        <span class="copy-message" id="copyMessage">Text copied successfully! 🎉</span><div class="video-container">
+        <video controls autoplay loop>
+            <source src="https://drive.google.com/file/d/1-1U_G35u0t1knz3bXQeig3zsrg4vYgsg/view?usp=drivesdk" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <button class="download-btn" onclick="downloadFile()">Download File</button>
+</div>
+
+<script>
+    function copyText(textId, element) {
+        const text = document.getElementById(textId).innerText;
+        navigator.clipboard.writeText(text);
+        const message = document.getElementById("copyMessage");
+        message.style.display = "block";
+        message.style.opacity = "1";
+        setTimeout(() => {
+            message.style.opacity = "0";
+            setTimeout(() => message.style.display = "none", 500);
+        }, 3000);
+        
+        document.querySelectorAll(".copy-box").forEach(box => box.classList.remove("active"));
+        element.classList.add("active");
+    }
+    
+    function removeActive() {
+        document.querySelectorAll(".copy-box").forEach(box => box.classList.remove("active"));
+    }
+    
+    function downloadFile() {
+        const link = document.createElement("a");
+        link.href = "https://drive.google.com/file/d/1-1U_G35u0t1knz3bXQeig3zsrg4vYgsg/view?usp=drivesdk"; // Replace with your file URL
+        link.download = "Mg-Lion-watermark-16.mp4"; // Replace with your file name
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+
+</body>
+</html>
+
+    <div class="container">
+        <h2>MG Lion Promotion Guidelines</h2>
+
+        <div class="term">
+            <span class="term-number"></span>
+            <strong>Brand:</strong> MG Lion 
+        </div>
+
+        <div class="term">
+            <span class="term-number"></span>
+            <strong>Price:</strong> ₹750 per million views   (for managers)
+        </div>
+
+        <div class="term">
+            <span class="term-number"></span>
+            <strong>Requirement:</strong> Organic, genuine views
+        </div>
+
+        <div class="term">
+            <span class="term-number"></span>
+            <strong>Allowed Categories:</strong> All (except cartoons, games, serials, gods, and animations)
+        </div>
+
+        <div class="term">
+            <span class="term-number"></span>
+            <strong>Languages:</strong> All
+        </div>
+
+        <h2>Rules for MG Lion Promotions</h2>
+
+ <div class="term">
+    <span class="term-number">01</span>
+    <strong>Reel Length:</strong> ⏳ Each reel must be at least 15 seconds long.
+</div>
+
+<div class="term">
+    <span class="term-number">02</span>
+    <strong>Exclusive Promotions:</strong> 👤 No other promotions should run simultaneously with MG Lion. Keep the MG Lion link in your bio until payment is received.
+</div>
+
+<div class="term">
+    <span class="term-number">03</span>
+    <strong>Engagement Visibility:</strong> 💬 Comments must remain ON. Likes and shares must not be hidden.
+</div>
+
+<div class="term">
+    <span class="term-number">04</span>
+    <strong>Hashtag Usage:</strong> 🌟 Use the provided hashtags in your posts. Failure to use will result in a 10% cut in payment.
+</div>
+
+<div class="term">
+    <span class="term-number">05</span>
+    <strong>Logo Guidelines:</strong> 🎨 Do not apply filters, cuts, or blends on the logo. The logo must not be sped up. Avoid adding any text behind the logo. The logo size must be prominent and visible.
+</div>
+
+<div class="term">
+    <span class="term-number">06</span>
+    <strong>Video Duration vs. Logo Duration:</strong> 📹 The logo must be visible for the entire duration of the video. For longer videos, ensure the logo is displayed twice at the same position where the first logo appears.
+</div>
+
+<div class="term">
+    <span class="term-number">07</span>
+    <strong>No Collaborations:</strong> 🚫 Collaboration content is not allowed for promotional videos.
+</div>
+
+<div class="term">
+    <span class="term-number">08</span>
+    <strong>No Bio = No Payment:</strong> ⚠️
+    <p>🚀 Want to get paid? Complete your bio first! 🚀</p>
+</div>
+
+
+        <div class="term">
+            <strong>Important Notes:</strong> Failure to comply with these guidelines may result in disqualification from payment. Follow the rules carefully to ensure a successful and rewarding partnership.
+        </div>
+
+        <a href="https://chat.whatsapp.com/Co1DEKlMcCt0Z0SHGn0T0P" class="contact-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Contact Us
+        </a>
+    </div>
+
+<!-- Footer Section -->
+<footer style="background: #111; color: #fff; padding: 40px 20px; text-align: center; font-family: Arial, sans-serif;">
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: auto;">
+        <!-- Left Section -->
+        <div style="flex: 1; min-width: 250px; text-align: left; margin-bottom: 20px;">
+            <h4>Thank you for exploring our website!</h4>
+            <p>We'd love to collaborate with you and bring your vision to life.</p>
+            <p>📧 Email us or connect with us on Instagram to get started.</p>
+            <p>✨ Let's work together to make your brand unforgettable!</p>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h4>Contact Info</h4>
+            <p>📧 rtwmediaagency@gmail.com</p>
+            <p>📍 Lucknow, India</p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div style="flex: 1; min-width: 250px; text-align: left; margin-bottom: 20px;">
+            <h4>Quick Links</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="https://rtwmediaagency.com" style="color: #fff; text-decoration: none;"><img src="https://i.ibb.co/gLsBZ1Rz/5974636.png" alt="Home Icon" style="width: 20px; height: 20px; margin-right: 8px;">Home</a></li>
+                <li><a href="https://rtwmediaagency.com/#apihu-port-resume" style="color: #fff; text-decoration: none;"><img src="https://i.ibb.co/vvMxNr3Q/18792963.png" alt="About Icon" style="width: 20px; height: 20px; margin-right: 8px;">About</a></li>
+                <li><a href="https://rtwmediaagency.com/#apihu-port-feature" style="color: #fff; text-decoration: none;"><img src="https://i.ibb.co/DfftdF4Q/customer-service-1.png" alt="Services Icon" style="width: 20px; height: 20px; margin-right: 8px;">Services</a></li>
+                <li><a href="https://rtwmediaagency.com/#contact-details" style="color: #fff; text-decoration: none;"><img src="https://i.ibb.co/fd3pTPNJ/14946653.png" alt="Contact Icon" style="width: 20px; height: 20px; margin-right: 8px;">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <hr style="border-color: rgba(255, 255, 255, 0.2); margin: 20px 0;">
+    <p>&copy; 2020–2025 All rights reserved</p>
+
+     <!-- Social Icons -->
+    <div style="margin-top: 10px; display: flex; justify-content: center; gap: 20px;">
+        <a href="https://chat.whatsapp.com/Co1DEKlMcCt0Z0SHGn0T0P" target="_blank" style="color: #fff; text-decoration: none;"><img src="https://i.ibb.co/jvN3Lz2N/phone.png" alt="WhatsApp Icon" style="width: 30px; height: 30px;"></a>
+        <a href="https://www.instagram.com/rtw_media_agency/" target="_blank" style="color: #fff; text-decoration: none;"><img src="https://i.ibb.co/60KSL9VY/instagram.png" alt="Instagram Icon" style="width: 30px; height: 30px;"></a>
+        <a href="mailto:rtwmediaagency@gmail.com" target="_blank" style="color: #fff; text-decoration: none;"><img src="https://i.ibb.co/LzcDcGsC/gmail.png" alt="Email Icon" style="width: 30px; height: 30px;"></a>
+    </div>
+</footer>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        menuButton.addEventListener('click', () => {
+            const isMenuOpen = dropdownMenu.style.display === 'flex';
+            menuButton.classList.toggle('active');
+            dropdownMenu.style.display = isMenuOpen ? 'none' : 'flex';
+        });
+
+        const terms = document.querySelectorAll('.term');
+
+        terms.forEach(term => {
+            term.addEventListener('click', () => {
+                terms.forEach(t => t.classList.remove('active'));
+                term.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
